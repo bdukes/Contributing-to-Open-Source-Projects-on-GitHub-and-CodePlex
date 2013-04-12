@@ -173,18 +173,23 @@
     <div id="source-control-workflow" class="step" data-x="8000">
         <h3>Source Control &#x2013; Workflow</h3>
         <ol>
-            <li>Get latest <ul><li><code>git fetch remote; git merge remote/repo</code></li></ul></li>
-            <li>Branch <ul><li><code>git checkout -b DNN-12345678</code></li></ul></li>
+            <li><span>Get latest</span> <ul><li><code>git fetch remote; git merge remote/repo</code></li></ul></li>
+            <li><span>Branch</span> <ul><li><code>git checkout -b DNN-12345678</code></li></ul></li>
             <li>????</li>
-            <li>Verify change(s) <ul><li><code>git status</code></li><li><code>git difftool</code></li></ul></li>
-            <li>Commit change(s) <ul><li><code>git add -A; git commit</code></li></ul></li>
-            <li>Publish change(s)
+            <li><span>Verify change(s)</span> 
+                <ul>
+                    <li><code>git status</code></li>
+                    <li><code>git difftool</code></li>
+                </ul>
+            </li>
+            <li><span>Commit change(s)</span> <ul><li><code>git add -A; git commit</code></li></ul></li>
+            <li><span>Publish change(s)</span>
                 <ul>
                     <li><code>git push -u origin DNN-12345678</code></li>
                     <li><code>git format-patch HEAD~1</code></li>
                 </ul>
             </li>
-            <li>Revert to latest <ul><li><code>git checkout master</code></li></ul></li>
+            <li><span>Revert to latest</span> <ul><li><code>git checkout master</code></li></ul></li>
         </ol>
     </div>
     <div id="dotnetnuke-on-git" class="step second-step" data-x="8000" data-z="-1000">
