@@ -228,9 +228,22 @@ q strong {
     height: 800px;
 }
 #source-control-workflow ol > li {
-    vertical-align: top;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+#source-control-workflow span {
+    display: block;
 }
 #source-control-workflow ul {
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     display: inline-block;
 }
 #dotnetnuke-on-git iframe {
