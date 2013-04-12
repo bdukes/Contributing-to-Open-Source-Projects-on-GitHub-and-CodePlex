@@ -62,13 +62,14 @@
             <li>Open source, you can lobby and help</li>
         </ul>
     </div>
-    <div id="collaboration" class="step" data-x="3000">
+    <div id="collaboration-issues" class="step" data-x="3000">
         <h3>Collaboration &#x2013; Submitting Issues</h3>
         <ul>
             <li>
                 Issue Tracker
                 <ul>
                     <li><a href="http://support.dotnetnuke.com/">support.dotnetnuke.com</a></li>
+                    <li><a href="http://www.dotnetnuke.com/Community/Community-Voice.aspx">DNN Community Voice</a></li>
                     <li>CodePlex Issues</li>
                     <li>GitHub Issues</li>
                 </ul>
@@ -77,18 +78,145 @@
             <li>Check for duplicates</li>
         </ul>
     </div>
-    <div id="misc" class="step" data-x="6000">
-        <h3>Misc notes</h3>
+    <div id="collaboration-bugs" class="step" data-x="4000">
+        <h3>Collaboration &#x2013; Submitting Bugs</h3>
         <ul>
-            <li>Lobby your boss to be able to contribute</li>
+            <li>What's it do?</li>
+            <li>
+                What's it supposed to do?
+                <ul>
+                    <li>Are you using it right?</li>
+                    <li>Are you sure?</li>
+                </ul>
+            </li>
+            <li>
+                How'd you get it to do that?
+                <ul>
+                    <li>Easy to follow steps (that work)</li>
+                    <li>SImple demo extension (or site backup)</li>
+                    <li>Patch with failing unit test</li>
+                </ul>
+            </li>
+            <li>Only one issue at a time</li>
         </ul>
     </div>
-    <div id="wrap-up" class="step" data-x="9000">
+    <div id="collaboration-gemini" class="step second-step" data-x="4000" data-z="-1000">
+        <h3>Collaboration &#x2013; Gemini (DotNetNuke)</h3>
+        <iframe src="http://support.dotnetnuke.com/">
+            Loading DotNetNuke Issue Tracker
+        </iframe>
+    </div>
+    <div id="collaboration-gemini-2" class="step second-step" data-x="4000" data-z="-2000">
+        <h3>Collaboration &#x2013; Gemini (DotNetNuke)</h3>
+        <ul>
+            <li>Remember to follow issue after creating</li>
+        </ul>
+    </div>
+    <div id="collaboration-patches" class="step" data-x="5000">
+        <h3>Collaboration &#x2013; Submitting Patches</h3>
+        <ul>
+            <li>
+                Is it worth your time?
+                <ul><li>Is it worth their time?</li></ul>
+            </li>
+            <li>Consistent approach</li>
+            <li>Complete and isolated</li>
+            <li>
+                Start a discussion
+                <ul>
+                    <li>Twitter</li>
+                    <li>Email</li>
+                </ul>
+            </li>
+            <li>Get a sponsor</li>
+        </ul>
+    </div>
+    <div id="collaboration-alternatives" class="step second-step" data-x="5000" data-z="-1000">
+        <h3>Collaboration &#x2013; Create Alternatives</h3>
+        <ul>
+            <li>They won't accept your patch :-(</li>
+            <li>Make a replacement</li>
+            <li>Contribute to the community</li>
+            <li>Get mindshare</li>
+            <li>Accept contributions, but keep focus</li>
+        </ul>
+    </div>
+    <div id="source-control" class="step" data-x="6000">
+        <h3>Source Control</h3>
+        <ul>
+            <li>
+                DotNetNuke
+                <ul>
+                    <li>Codeplex</li>
+                    <li>SVN</li>
+                </ul>
+            </li>
+            <li>GitHub</li>
+        </ul>
+    </div>
+    <div id="source-control-git" class="step" data-x="7000">
+        <h3>Source Control &#x2013; Git</h3>
+        <ul>
+            <li>Learn the command line</li>
+            <li>
+                Use a graphical tool
+                <ul>
+                    <li>Git Extensions</li>
+                    <li>SourceTree</li>
+                    <li>Tower</li>
+                </ul>
+            </li>
+            <li><abbr title="distributed version control system">DVCS</abbr></li>
+            <li><abbr title="directed acyclic graph">DAG</abbr></li>
+        </ul>
+    </div>
+    <div id="source-control-workflow" class="step" data-x="8000">
+        <h3>Source Control &#x2013; Workflow</h3>
+        <ol>
+            <li>Get latest <ul><li><code>git fetch remote; git merge remote/repo</code></li></ul></li>
+            <li>Branch <ul><li><code>git checkout -b DNN-12345678</code></li></ul></li>
+            <li>????</li>
+            <li>Verify change(s) <ul><li><code>git status</code></li><li><code>git difftool</code></li></ul></li>
+            <li>Commit change(s) <ul><li><code>git add -A; git commit</code></li></ul></li>
+            <li>Publish change(s)
+                <ul>
+                    <li><code>git push -u origin DNN-12345678</code></li>
+                    <li><code>git format-patch HEAD~1</code></li>
+                </ul>
+            </li>
+            <li>Revert to latest <ul><li><code>git checkout master</code></li></ul></li>
+        </ol>
+    </div>
+    <div id="dotnetnuke-on-git" class="step second-step" data-x="8000" data-z="-1000">
+        <h3>DotNetNuke on Git</h3>
+        <ul>
+            <li><a href="https://github.com/EngageSoftware/DotNetNuke">github.com/EngageSoftware/DotNetNuke</a></li>
+            <li>Submit pull requests</li>
+        </ul>
+        <iframe src="https://github.com/EngageSoftware/DotNetNuke/pull/1">
+            Pull request for DotNetNuke on GitHub
+        </iframe>
+    </div>
+    <div id="concluding" class="step" data-x="9000">
+        <h3>Concluding</h3>
+        <ul>
+            <li>
+                Contributing is valuable for everyone
+                <ul><li>Especially when done well</li></ul>
+            </li>
+            <li>Lobby your boss to be able to contribute</li>
+            <li>Be known as a quality contributor</li>
+            <li>Be good natured</li>
+            <li>Push for openness</li>
+        </ul>
+    </div>
+    <div id="wrap-up" class="step" data-x="10000">
         <h3>Wrap Up</h3>
         <ul>
             <li>Open Source is Cool</li>
             <li>Efficient and Effective Collaboration</li>
             <li>Version Control Tooling</li>
+            <li>Making it Better for Everyone</li>
         </ul>
         <h3>More Info</h3>
         <ul>
@@ -100,7 +228,7 @@
             <li><a href="http://bit.ly/git-tools"><strong>http://bit.ly/git-tools</strong></a></li>
         </ul>
     </div>
-    <div id="sponsors" class="step" data-x="11000" data-rotate="180">
+    <div id="sponsors" class="step" data-x="14000" data-rotate="180">
         <h3>Thanks to all our Generous Sponsors!</h3>
         <a id="dnn-logo" href="http://www.dotnetnuke.com/"><img src="img/DotNetNuke.png" alt="DotNetNuke" /></a>
         <a href="http://www.PowerDNN.com/"><img src="img/PowerDnn.png" alt="PowerDNN" /></a>
