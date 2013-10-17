@@ -220,8 +220,14 @@ q strong {
 #title .sponsors img {
     width: 45%;
 }
-#title .sponsors :first-child img {
-    width: 75%;
+#title .sponsors > :first-child {
+    display: block;
+}
+#title .sponsors > :first-child img {
+    width: 50%;
+}
+#title .sponsors > :nth-child(2n) img {
+    width: 18%;
 }
 #collaboration-gemini iframe {
     width: 900px;
@@ -259,6 +265,9 @@ q strong {
 }
 #sponsors img {
     max-width: 30%;
+}
+#sponsors a#dnn-logo {
+    display: block;
 }
 #sponsors a#dnn-logo img {
     width: 420px;
