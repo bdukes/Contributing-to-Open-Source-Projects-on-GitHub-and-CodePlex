@@ -72,9 +72,26 @@ html {
 }
 body {
     min-height: 740px;
-    background-image: url(../img/Southern%20Fried%20DNN.png), url(../img/QCDUG.png);
-    background-position: left bottom, right bottom;
+    background-image: url(../img/DNNCon.png), url(../img/twitter.png);
+    background-position: 1% 99%, 90% 99%;
     background-repeat: no-repeat;
+}
+body:before {
+    content: "Don’t forget to include #DNNCon in your tweets!";
+    text-align: center;
+    display: block;
+    position: absolute;
+    bottom: 1%;
+    transform: translateX(100%);
+    font-size: 1.5em;
+}
+body:after {
+    content: "@DNNCon";
+    display: block;
+    position: absolute;
+    bottom: 1%;
+    right: 1em;
+    font-size: 1.5em;
 }
 
 /*
@@ -229,7 +246,7 @@ q strong {
 #title .sponsors > :nth-child(2n) img {
     width: 18%;
 }
-#collaboration-gemini iframe {
+#collaboration-jira iframe {
     width: 900px;
     height: 800px;
 }
@@ -251,10 +268,6 @@ q strong {
     -ms-flex: 1;
     flex: 1;
     display: inline-block;
-}
-#dotnetnuke-on-git iframe {
-    width: 900px;
-    height: 500px;
 }
 #sponsors.step {
     text-align: center;
