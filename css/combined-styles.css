@@ -231,6 +231,9 @@ q strong {
     line-height: 72px;
     margin: 0;
 }
+#title h2 img {
+    height: 1.1em;
+}
 #title .sponsors {
     text-align: center;
 }

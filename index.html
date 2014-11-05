@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=1024">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <title>Contributing to Open Source Projects on GitHub and CodePlex | DNNCon, West Palm Beach, October, 2013 | by Brian Dukes @BrianDukes</title>
+    <title>Contributing to Open Source Projects on GitHub | DNNCon, West Palm Beach, November, 2014 | by Brian Dukes @BrianDukes</title>
     
-    <meta name="description" content="You love DotNetNuke, except for those couple of things that you always run into, bringing frustrating friction into your daily workflow.  You can turn your frustration into excitement by taking responsibility and fixing the problem yourself, for the whole community.  It may be a problem with the DotNetNuke core application, or a core module, or another free module that you happened upon.  If the project is open source, you can make the change for yourself, and give it back to the project’s owners, contributing to the community ecosystem in the process.  This talk will go into the specifics of working with CodePlex and GitHub to create patches for DotNetNuke and other community projects.">
+    <meta name="description" content="You love DNN, except for those couple of things that you always run into, bringing frustrating friction into your daily workflow.  You can turn your frustration into excitement by taking responsibility and fixing the problem yourself, for the whole community.  It may be a problem with the DNN Platform, or a core module, or another free module that you happened upon.  If the project is open source, you can make the change for yourself, and give it back to the project’s owners, contributing to the community ecosystem in the process.  This talk will go into the specifics of working with GitHub to create patches for DNN and other community projects.">
     <meta name="author" content="Brian Dukes">
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold" rel="stylesheet">
@@ -30,8 +30,8 @@
 <div id="impress">
     <div id="title" class="step slide" data-x="0">
         <hgroup>
-            <h1>Contributing to Open Source Projects on GitHub and CodePlex</h1>
-            <h2>Brian Dukes, Engage</h2>
+            <h1>Contributing to Open Source Projects on GitHub</h1>
+            <h2>Brian Dukes <a href="http://www.engagesoftware.com/"><img src="img/Engage.png" alt="Engage" /></a></h2>
             <h3>@BrianDukes</h3>
         </hgroup>
         <p class="sponsors">
@@ -71,7 +71,6 @@
                 <ul>
                     <li><a href="http://support.dnnsoftware.com/">support.dnnsoftware.com</a></li>
                     <li><a href="http://www.dnnsoftware.com/voice">DNN Community Voice</a></li>
-                    <li>CodePlex Issues</li>
                     <li>GitHub Issues</li>
                 </ul>
             </li>
@@ -155,13 +154,12 @@
                 </ul>
             </li>
             <li><abbr title="distributed version control system">DVCS</abbr></li>
-            <li><abbr title="directed acyclic graph">DAG</abbr></li>
         </ul>
     </div>
     <div id="source-control-workflow" class="step" data-x="8000">
         <h3>Source Control &#x2013; Workflow</h3>
         <ol>
-            <li><span>Get latest</span> <ul><li><code>git fetch remote; git merge remote/repo</code></li></ul></li>
+            <li><span>Get latest</span> <ul><li><code>git fetch --all; git merge repo/branch</code></li></ul></li>
             <li><span>Branch</span> <ul><li><code>git checkout -b DNN-12345678</code></li></ul></li>
             <li>????</li>
             <li><span>Verify change(s)</span> 
@@ -177,7 +175,7 @@
                     <li>Submit pull request from GitHub.com</li>
                 </ul>
             </li>
-            <li><span>Revert to latest</span> <ul><li><code>git checkout master</code></li></ul></li>
+            <li><span>Revert to latest</span> <ul><li><code>git checkout development</code></li></ul></li>
         </ol>
     </div>
     <div id="concluding" class="step" data-x="9000">
