@@ -238,13 +238,7 @@ q strong {
     text-align: center;
 }
 #title .sponsors img {
-    width: 45%;
-}
-#title .sponsors > :first-child {
-    display: block;
-}
-#title .sponsors > :first-child img {
-    width: 50%;
+    width: 35%;
 }
 #title .sponsors > :nth-child(2n) img {
     width: 18%;
